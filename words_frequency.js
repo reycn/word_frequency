@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         词频统计
 // @namespace    https://quoth.win/word_freq
-// @version      1.0
+// @version      1.1
 // @description  利用COCA一万五词频表分析网页文单词词频
 // @author       Reynard
 // @include      *://*
