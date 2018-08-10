@@ -23,14 +23,14 @@ function addGlobalStyle(css) {
     head.appendChild(style);
 }
 
-addGlobalStyle('span_0 { color: black; background-color: #eee; padding-left:0.2em; padding-right:0.2em; } \
-                span_1 { color: black; background-color: #EFE7DA; padding-left:0.2em; padding-right:0.2em; } \
-                span_2 { color: white; background-color: #BDC9AF; padding-left:0.2em; padding-right:0.2em; } \
-                span_3 { color: white; background-color: #A1BEB4; padding-left:0.2em; padding-right:0.2em; } \
-                span_4 { color: white; background-color: #20A69A; padding-left:0.2em; padding-right:0.2em; } \
-                span_5 { color: white; background-color: #276A73; padding-left:0.2em; padding-right:0.2em; } \
-                span_6 { color: white; background-color: #043B40; padding-left:0.2em; padding-right:0.2em; } \
-                span_7 { color: white; background-color: #041625; padding-left:0.2em; padding-right:0.2em; }');
+addGlobalStyle('span_0 { color: black; background-color: #eee; padding-left:0.25em;} \
+                span_1 { color: black; background-color: #EFE7DA; padding-left:0.25em;} \
+                span_2 { color: white; background-color: #BDC9AF; padding-left:0.25em;} \
+                span_3 { color: white; background-color: #A1BEB4; padding-left:0.25em;} \
+                span_4 { color: white; background-color: #20A69A; padding-left:0.25em;} \
+                span_5 { color: white; background-color: #276A73; padding-left:0.25em;} \
+                span_6 { color: white; background-color: #043B40; padding-left:0.25em;} \
+                span_7 { color: white; background-color: #041625; padding-left:0.25em;}');
 
 var lemmatizer = (function () {
     var step2list = {
@@ -256,15 +256,15 @@ var addSpan = function (selected, selectedS, spanType, isParagraph) {
                 for (i in wordInLines) {
                     wordInLinesFrequency = checkFrequency(wordInLines[i])
                     if (j == 0) {
-                        newTextContent = newTextContent + " <span_" + wordInLinesFrequency + ">" + wordInLines[i] + "</span_" + wordInLinesFrequency + "><br/><br/>";
+                        newTextContent = newTextContent + "<span_" + wordInLinesFrequency + "> " + wordInLines[i] + " </span_" + wordInLinesFrequency + "><br/><br/>";
                     } else {
-                        newTextContent = newTextContent + " <span_" + wordInLinesFrequency + ">" + wordInLines[i] + "</span_" + wordInLinesFrequency + ">";
+                        newTextContent = newTextContent + "<span_" + wordInLinesFrequency + "> " + wordInLines[i] + " </span_" + wordInLinesFrequency + ">";
                     }
                     j = 1;
                 }
             } else {
                 var selectedSResult = checkFrequency(selectedS[i])
-                newTextContent = newTextContent + " <span_" + selectedSResult + ">" + selectedS[i] + "</span_" + selectedSResult + ">";
+                newTextContent = newTextContent + "<span_" + selectedSResult + "> " + selectedS[i] + " </span_" + selectedSResult + ">";
             }
         }
 
