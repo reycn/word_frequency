@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         词频统计
 // @namespace    https://quoth.win/word_freq
-// @version      1.1
+// @version      1.2
 // @description  利用COCA一万五词频表分析网页文单词词频，建议手动替换为五万词库。
 // @author       Reynard
 // @include      *://*
@@ -341,8 +341,9 @@ var main = function () {
                 addSpan(selected, selectedS, 0, true); //0是占位符
             }
         }
-
         document.getSelection().removeAllRanges(); //运行完成后取消选择
+
+        
     });
 };
 //运行主程序
