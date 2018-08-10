@@ -293,7 +293,7 @@ var checkFrequency = function (selectedS) {
         return (5);
     } else if (inWordsResult <= 15000) {
         return (6);
-    } else if (inWordsResult <= 20000) {
+    } else if (inWordsResult <= 47000) {
         return (7);
     } else {
         console.log("Unexcepted");
