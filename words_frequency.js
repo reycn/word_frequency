@@ -302,9 +302,12 @@ var checkFrequency = function (selectedS) {
 };
 
 var checkElements = function (selected) { //需要完善
-    ckString = selected.getRangeAt(0).startContainer.parentNode.innerHTML;
-    if (ckString.indexOf("<img") >= 0 || ckString.indexOf("><") >= 0) return;
-    return false;
+
+    if (document.activeElement.nodeName == "TEXTAREA" || document.activeElement.nodeName == "INPUT" ||document.activeElement.nodeName == "img" ||document.activeElement.nodeName == "video" ||document.activeElement.nodeName == "a" ) {
+        return true;
+    } else {
+        return false;
+    }
 }
 //主进程
 var main = function () {
@@ -312,7 +315,7 @@ var main = function () {
         var selected = document.getSelection();
         var selectedS = selected.toString();
 
-        if (checkElements(selected) == true) {
+        if (checkElements(selected)) {
             console.log("Skip!!!");
         } else if (selectedS != null && selectedS != "" && selectedS.trim().indexOf(" ") < 0) {
             console.log(inWords("the"));
@@ -326,7 +329,7 @@ var main = function () {
             } else {
                 console.log("Exception!");
             }
-
+            document.getSelection().removeAllRanges();
         } else if (selectedS != null && selectedS != "" && selectedS.indexOf(" ") >= 1) {
             console.log("Paragraph!");
             if (selectedS.length >= 2000) {
@@ -339,8 +342,9 @@ var main = function () {
             } else {
                 addSpan(selected, selectedS, 0, true); //0是占位符
             }
+            document.getSelection().removeAllRanges();
         }
-        document.getSelection().removeAllRanges(); //运行完成后取消选择
+         //运行完成后取消选择
 
         
     });
