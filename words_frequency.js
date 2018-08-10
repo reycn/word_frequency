@@ -2,7 +2,7 @@
 // @name         词频统计
 // @namespace    https://quoth.win/word_freq
 // @version      1.1
-// @description  利用COCA一万五词频表分析网页文单词词频
+// @description  利用COCA一万五词频表分析网页文单词词频，建议手动替换为五万词库。
 // @author       Reynard
 // @include      *://*
 // @grant        none
