@@ -13,12 +13,15 @@ A script to analyse the frequencies of words in web pages.
 - Tested on [Chrome](https://www.google.com/chrome/) with [TamperMonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)  
 
 ## Known issues
-- No judgement of English at this moment.  
-- Might be slow if long passage was selected.  
+- No pages/elements judgements. 
+- <del>No judgement of English at this moment.</del>  
+- <del>Might be slow if long passage was selected.</del>  
 
 ## TODO
-- English judgement    
-    
+- <del>English judgement</del>  
+- <del>Performance</del>  
+- Pages/Elements judgements.  
+
 ## Demo Gif
 ![demogif](https://github.com/oyrx/word_frequency/raw/master/others/words.gif)
 
@@ -41,11 +44,14 @@ A script to analyse the frequencies of words in web pages.
 - 安装了 [TamperMonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) 的 [Chrome浏览器](https://www.google.com/chrome/)   
 
 ## 已知问题
-- 暂时没有对英文进行判断  
-- 受限于JS运行效率，长篇段落比较慢  
+- 没有判断网页类型和元素
+- <del>暂时没有对英文进行判断</del>  
+- <del>受限于JS运行效率，长篇段落比较慢</del>  
 
 ## TODO
-- 判断英文  
+- <del>判断英文</del>  
+- <del>性能优化</del>  
+- 元素判断  
 
     
 ## 功能演示
