@@ -37,7 +37,7 @@ A script to analyse the frequencies of words in web pages.
 一行 为 文件 `COCA_47000` 的五万词频库。  
 
 [在线安装](https://greasyfork.org/zh-CN/scripts/371031-%E8%AF%8D%E9%A2%91%E7%BB%9F%E8%AE%A1)  
-[开原地址](https://github.com/oyrx/word_frequency)  
+[开源地址](https://github.com/oyrx/word_frequency)  
 [博客](https://quoth.win/word_freq)  
 
 ## 主要功能
